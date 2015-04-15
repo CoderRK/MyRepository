@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		F1338E301ADE4808008BADB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1338E2F1ADE4808008BADB8 /* main.m */; };
 		F1338E331ADE4808008BADB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1338E321ADE4808008BADB8 /* AppDelegate.m */; };
-		F1338E361ADE4808008BADB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1338E351ADE4808008BADB8 /* ViewController.m */; };
 		F1338E3B1ADE4808008BADB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1338E3A1ADE4808008BADB8 /* Images.xcassets */; };
 		F1338E4A1ADE4808008BADB8 /* CustomClassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1338E491ADE4808008BADB8 /* CustomClassTests.m */; };
+		F1338E581ADE6CA1008BADB8 /* RKMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1338E571ADE6CA1008BADB8 /* RKMainController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +30,12 @@
 		F1338E2F1ADE4808008BADB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1338E311ADE4808008BADB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1338E321ADE4808008BADB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F1338E341ADE4808008BADB8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F1338E351ADE4808008BADB8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F1338E3A1ADE4808008BADB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F1338E431ADE4808008BADB8 /* CustomClassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomClassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1338E481ADE4808008BADB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1338E491ADE4808008BADB8 /* CustomClassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomClassTests.m; sourceTree = "<group>"; };
+		F1338E561ADE6CA1008BADB8 /* RKMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKMainController.h; sourceTree = "<group>"; };
+		F1338E571ADE6CA1008BADB8 /* RKMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKMainController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +79,8 @@
 			children = (
 				F1338E311ADE4808008BADB8 /* AppDelegate.h */,
 				F1338E321ADE4808008BADB8 /* AppDelegate.m */,
-				F1338E341ADE4808008BADB8 /* ViewController.h */,
-				F1338E351ADE4808008BADB8 /* ViewController.m */,
+				F1338E561ADE6CA1008BADB8 /* RKMainController.h */,
+				F1338E571ADE6CA1008BADB8 /* RKMainController.m */,
 				F1338E3A1ADE4808008BADB8 /* Images.xcassets */,
 				F1338E2D1ADE4808008BADB8 /* Supporting Files */,
 			);
@@ -211,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1338E361ADE4808008BADB8 /* ViewController.m in Sources */,
+				F1338E581ADE6CA1008BADB8 /* RKMainController.m in Sources */,
 				F1338E331ADE4808008BADB8 /* AppDelegate.m in Sources */,
 				F1338E301ADE4808008BADB8 /* main.m in Sources */,
 			);
@@ -395,6 +395,7 @@
 				F1338E4F1ADE4808008BADB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1338E501ADE4808008BADB8 /* Build configuration list for PBXNativeTarget "CustomClassTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +404,7 @@
 				F1338E521ADE4808008BADB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

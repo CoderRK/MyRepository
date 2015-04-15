@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "RKMainController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    RKMainController *mainCtr = [[RKMainController alloc] init];
+    UINavigationController *navCtr = [[UINavigationController alloc] initWithRootViewController:mainCtr];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+    _window.rootViewController = navCtr;
+    [_window makeKeyAndVisible];
     return YES;
 }
 @end
