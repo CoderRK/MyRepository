@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RKMainController.h
 //  CustomClass
 //
 //  Created by 任奎 on 15/4/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RKMainController : UIViewController
 
 @end
-
