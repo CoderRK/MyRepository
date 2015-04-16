@@ -1,0 +1,14 @@
+//
+//  CustomClass.pch
+//  CustomClass
+//
+//  Created by 任奎 on 15/4/16.
+//  Copyright (c) 2015年 RK. All rights reserved.
+//
+
+#ifndef CustomClass_CustomClass_pch
+#define CustomClass_CustomClass_pch
+
+#import "UIView+Extension.h"
+#import "NSString+Size.h"
+#endif
