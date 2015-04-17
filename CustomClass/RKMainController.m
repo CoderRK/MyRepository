@@ -8,6 +8,7 @@
 
 #import "RKMainController.h"
 #import "RKTextView.h"
+#import "RKWaterFlowController.h"
 
 
 @interface RKMainController ()
@@ -19,9 +20,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
     [self setupTextView];
+    [self setupBtnJump];
 }
 
+- (void)setupBtnJump
+{
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 300, 100, 44)];
+    btn.layer.cornerRadius = 10;
+    [btn setTitle:@"点击跳转" forState:UIControlStateNormal];
+    [btn setBackgroundColor:[UIColor redColor]];
+    [btn addTarget:self action:@selector(jumpToCtr) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+- (void)jumpToCtr
+{
+    RKWaterFlowController *wfCtr = [[RKWaterFlowController alloc] init];
+    [self.navigationController pushViewController:wfCtr animated:YES];
+}
 - (void)setupTextView
 {
     RKTextView *textView = [[RKTextView alloc] initWithFrame:self.view.bounds];
