@@ -46,4 +46,6 @@ typedef enum{
 @property(nonatomic,weak) id<RKWaterFlowViewDataSource> dataSource;
 @property(nonatomic,weak) id<RKWaterFlowViewDelegate> MyDelegate;
 - (void)reloadData;
+- (id)dequeueReusableCellWithIdentifier:(NSString *)identifier;
+- (CGFloat)cellWidth;
 @end

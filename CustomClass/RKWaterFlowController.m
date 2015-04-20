@@ -28,18 +28,31 @@
 }
 - (NSUInteger)numberOfCellsInWaterFlowView:(RKWaterFlowView *)waterFlowView
 {
-    return 100;
+    return 10000;
 }
 - (NSUInteger)numberOfColumnsInWaterFlowView:(RKWaterFlowView *)waterFlowView
 {
     return 3;
 }
+
 - (RKWaterFlowViewCell *)waterFlowView:(RKWaterFlowView *)waterFlowView cellAtIndex:(NSUInteger)index
 {
-    RKWaterFlowViewCell *cell = [[RKWaterFlowViewCell alloc] init];
-    cell.backgroundColor = RKRandomColor;
+    static NSString *cellID = @"cell";
+    RKWaterFlowViewCell *cell = [waterFlowView dequeueReusableCellWithIdentifier:cellID];
+    if (cell == nil) {
+        cell = [[RKWaterFlowViewCell alloc] init];
+        cell.identifier = cellID;
+        cell.backgroundColor = RKRandomColor;
+        
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 60, 20)];
+        label.tag = 10;
+        [cell addSubview:label];
+    }
+    UILabel *label = (UILabel *)[cell viewWithTag:10];
+    label.text = [NSString stringWithFormat:@"%lu",(unsigned long)index];
     return cell;
 }
+
 - (CGFloat)waterFlowView:(RKWaterFlowView *)waterFlowView heightAtIndex:(NSUInteger)index
 {
     switch (index%3) {

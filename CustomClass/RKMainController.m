@@ -41,11 +41,19 @@
 }
 - (void)setupTextView
 {
-    RKTextView *textView = [[RKTextView alloc] initWithFrame:self.view.bounds];
+    RKTextView *textView = [[RKTextView alloc] initWithFrame:CGRectMake(0, 0, self.view.width,self.view.height-280)];
+    textView.backgroundColor = [UIColor cyanColor];
     textView.placeholderWord = @"赶紧分享你的新鲜事吧，你可以吐槽，可以夸奖，可以抒发你的心情，在这里全凭你自由发挥，没有界限，没有尺度，因为我们是龙的传人，龙之子民，就应该有龙的品行！！！！Just do it ";
     textView.placeholderColor = [UIColor brownColor];
     textView.font = [UIFont systemFontOfSize:20];
     [self.view addSubview:textView];
     self.textView = textView;
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    if (![self.textView isExclusiveTouch]) {
+        [self.textView resignFirstResponder];
+    }
 }
 @end

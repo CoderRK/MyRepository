@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface RKWaterFlowViewCell : UIView
-
+@property(nonatomic,copy) NSString *identifier;
 @end
