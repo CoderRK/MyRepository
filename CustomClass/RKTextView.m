@@ -8,7 +8,7 @@
 
 #import "RKTextView.h"
 
-@interface RKTextView ()
+@interface RKTextView ()<UITextViewDelegate>
 @property(nonatomic,weak) UILabel *placeholderLabel;
 @end
 
@@ -57,6 +57,20 @@
 - (void)textDidChange
 {
     self.placeholderLabel.hidden = (self.text.length!=0);
+    // 判断字符串包不包含汉子
+    if (self.text.length>0) {
+        NSInteger charNum = 0;
+        for (int i = 0; i < self.text.length; i++, charNum++) {
+            unichar ch = [self.text characterAtIndex:i];
+            if (ch > 19968 && ch < 19968+20902) {
+                charNum++;
+                NSLog(@"%@是汉字",self.text);
+            }
+            else {
+                NSLog(@"%@不是汉字",self.text);
+            }
+        }
+    }
 }
 
 - (void)layoutSubviews
@@ -74,5 +88,4 @@
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
-
 @end

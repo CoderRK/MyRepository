@@ -9,6 +9,7 @@
 #import "RKMainController.h"
 #import "RKTextView.h"
 #import "RKWaterFlowController.h"
+#import "RKCircleAnimationController.h"
 
 
 @interface RKMainController ()
@@ -19,6 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"demo";
+    [self.navigationController.navigationBar setTitleTextAttributes:@{
+                                                                      NSFontAttributeName:[UIFont systemFontOfSize:19],NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self setupTextView];
@@ -33,7 +38,22 @@
     [btn setBackgroundColor:[UIColor redColor]];
     [btn addTarget:self action:@selector(jumpToCtr) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    UIButton *btnCircle = [[UIButton alloc] initWithFrame:CGRectMake(100, 400, 100, 44)];
+    btnCircle.layer.cornerRadius = 10;
+    [btnCircle setTitle:@"跳转动画" forState:UIControlStateNormal];
+    [btnCircle setBackgroundColor:[UIColor brownColor]];
+    [btnCircle addTarget:self action:@selector(jumpToCircle) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btnCircle];
+    
+    
 }
+- (void)jumpToCircle
+{
+    RKCircleAnimationController *circleCtr = [[RKCircleAnimationController alloc] init];
+    [self.navigationController pushViewController:circleCtr animated:YES];
+}
+
 - (void)jumpToCtr
 {
     RKWaterFlowController *wfCtr = [[RKWaterFlowController alloc] init];
@@ -41,9 +61,9 @@
 }
 - (void)setupTextView
 {
-    RKTextView *textView = [[RKTextView alloc] initWithFrame:CGRectMake(0, 0, self.view.width,self.view.height-280)];
+    RKTextView *textView = [[RKTextView alloc] initWithFrame:CGRectMake(0, 0, self.view.width,self.view.height-380)];
     textView.backgroundColor = [UIColor cyanColor];
-    textView.placeholderWord = @"赶紧分享你的新鲜事吧，你可以吐槽，可以夸奖，可以抒发你的心情，在这里全凭你自由发挥，没有界限，没有尺度，因为我们是龙的传人，龙之子民，就应该有龙的品行！！！！Just do it ";
+    textView.placeholderWord = @"赶紧分享你的新鲜事吧，你还可以吐槽,Just do it ";
     textView.placeholderColor = [UIColor brownColor];
     textView.font = [UIFont systemFontOfSize:20];
     [self.view addSubview:textView];
