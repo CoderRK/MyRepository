@@ -10,8 +10,8 @@
 #import "RKCorlorView.h"
 
 @interface RKCircleAnimationController ()
-@property(nonatomic,strong)NSTimer *rkTime;
-@property(nonatomic,strong)RKCorlorView *showAnimation;
+@property(nonatomic,weak)NSTimer *timer;
+@property(nonatomic,weak)RKCorlorView *showAnimation;
 @end
 
 @implementation RKCircleAnimationController
@@ -22,21 +22,35 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     
-    self.showAnimation = [[RKCorlorView alloc] initWithFrame:CGRectMake(0, 0, 110, 100)];
-    self.showAnimation.lineW = 5.f;
-    self.showAnimation.second = 1.f;
-    self.showAnimation.colors = @[(id)[UIColor redColor].CGColor,
+    RKCorlorView *showAnimation = [[RKCorlorView alloc] initWithFrame:CGRectMake(0, 0, 110, 100)];
+    showAnimation.lineW = 5.f;
+    showAnimation.second = 1.f;
+    showAnimation.colors = @[(id)[UIColor redColor].CGColor,
                                   (id)[UIColor orangeColor].CGColor,
                                   (id)[UIColor blueColor].CGColor,
                                   (id)[UIColor yellowColor].CGColor];
-    self.showAnimation.center = self.view.center;
-    self.rkTime = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(event:) userInfo:nil repeats:YES];
-    [self.view addSubview:self.showAnimation];
-    [self.showAnimation startAnimation];
+    showAnimation.center = self.view.center;
+   NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(event:) userInfo:nil repeats:YES];
+    [self.view addSubview:showAnimation];
+    [showAnimation startAnimation];
+    self.timer = timer;
 }
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:YES];
+    [self.showAnimation removeFromSuperview];
+    self.showAnimation = nil;
+    
+    [self.timer invalidate];
+    self.timer = nil;
+}
+
+
 - (void)event:(id)object
 {
     self.showAnimation.percent = arc4random()%100/100.f;
     NSLog(@"%f",arc4random()%100/100.f);
 }
+
 @end
