@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1283D8F1E0290610097F6C7 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283D8E1E0290610097F6C7 /* UIColor+Extension.m */; };
 		F1338E301ADE4808008BADB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1338E2F1ADE4808008BADB8 /* main.m */; };
 		F1338E331ADE4808008BADB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1338E321ADE4808008BADB8 /* AppDelegate.m */; };
 		F1338E3B1ADE4808008BADB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1338E3A1ADE4808008BADB8 /* Images.xcassets */; };
@@ -33,12 +34,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F1283D8D1E0290610097F6C7 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		F1283D8E1E0290610097F6C7 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		F1338E2A1ADE4808008BADB8 /* CustomClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1338E2E1ADE4808008BADB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1338E2F1ADE4808008BADB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1338E311ADE4808008BADB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1338E321ADE4808008BADB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F1338E3A1ADE4808008BADB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CustomClass/Images.xcassets; sourceTree = "<group>"; };
+		F1338E3A1ADE4808008BADB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F1338E431ADE4808008BADB8 /* CustomClassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomClassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1338E481ADE4808008BADB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1338E491ADE4808008BADB8 /* CustomClassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomClassTests.m; sourceTree = "<group>"; };
@@ -85,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				F1338E2C1ADE4808008BADB8 /* CustomClass */,
-				F1338E3A1ADE4808008BADB8 /* Images.xcassets */,
 				F1338E2D1ADE4808008BADB8 /* Supporting Files */,
 				F1338E461ADE4808008BADB8 /* CustomClassTests */,
 				F1338E2B1ADE4808008BADB8 /* Products */,
@@ -115,6 +117,7 @@
 		F1338E2D1ADE4808008BADB8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F1338E3A1ADE4808008BADB8 /* Images.xcassets */,
 				F1338E2E1ADE4808008BADB8 /* Info.plist */,
 				F1338E2F1ADE4808008BADB8 /* main.m */,
 			);
@@ -204,6 +207,8 @@
 		F1F88B011ADF63E000135248 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F1283D8D1E0290610097F6C7 /* UIColor+Extension.h */,
+				F1283D8E1E0290610097F6C7 /* UIColor+Extension.m */,
 				F1F88B021ADF640600135248 /* UIView+Extension.h */,
 				F1F88B031ADF640600135248 /* UIView+Extension.m */,
 				F1F88B051ADF8E4400135248 /* NSString+Size.h */,
@@ -257,7 +262,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RK;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = RK;
 				TargetAttributes = {
 					F1338E291ADE4808008BADB8 = {
@@ -318,6 +323,7 @@
 				F1F4E76B1ADFB64100356547 /* RKWaterFlowViewCell.m in Sources */,
 				F1F4E76E1ADFBF5600356547 /* RKWaterFlowController.m in Sources */,
 				F1D448091AE4D46B00697993 /* RKCorlorView.m in Sources */,
+				F1283D8F1E0290610097F6C7 /* UIColor+Extension.m in Sources */,
 				F1F4E7681ADFB40600356547 /* RKWaterFlowView.m in Sources */,
 				F1338E581ADE6CA1008BADB8 /* RKMainController.m in Sources */,
 				F1338E331ADE4808008BADB8 /* AppDelegate.m in Sources */,
@@ -357,14 +363,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -401,8 +410,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -433,7 +444,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = CustomClass/CustomClass.pch;
 				INFOPLIST_FILE = CustomClass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.9666.www.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,7 +459,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = CustomClass/CustomClass.pch;
 				INFOPLIST_FILE = CustomClass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.9666.www.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -466,6 +481,7 @@
 				);
 				INFOPLIST_FILE = CustomClassTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.9666.www.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomClass.app/CustomClass";
 			};
@@ -481,6 +497,7 @@
 				);
 				INFOPLIST_FILE = CustomClassTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.9666.www.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomClass.app/CustomClass";
 			};
