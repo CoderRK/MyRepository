@@ -10,13 +10,16 @@
 		F1283DAB1E0294670097F6C7 /* RKCircleAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DA61E0294670097F6C7 /* RKCircleAnimationController.m */; };
 		F1283DAC1E0294670097F6C7 /* RKMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DA81E0294670097F6C7 /* RKMainController.m */; };
 		F1283DAD1E0294670097F6C7 /* RKWaterFlowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DAA1E0294670097F6C7 /* RKWaterFlowController.m */; };
-		F1283DB71E0296B20097F6C7 /* RKCorlorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DB01E0296B20097F6C7 /* RKCorlorView.m */; };
-		F1283DB81E0296B20097F6C7 /* RKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DB21E0296B20097F6C7 /* RKTextView.m */; };
-		F1283DB91E0296B20097F6C7 /* RKWaterFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DB41E0296B20097F6C7 /* RKWaterFlowView.m */; };
-		F1283DBA1E0296B20097F6C7 /* RKWaterFlowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DB61E0296B20097F6C7 /* RKWaterFlowViewCell.m */; };
 		F1283DC11E0296B90097F6C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DBD1E0296B90097F6C7 /* AppDelegate.m */; };
-		F1283DC21E0296B90097F6C7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1283DBF1E0296B90097F6C7 /* Info.plist */; };
-		F1283DC31E0296B90097F6C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DC01E0296B90097F6C7 /* main.m */; };
+		F1283DD01E0298A10097F6C7 /* RKCorlorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DC71E0298A10097F6C7 /* RKCorlorView.m */; };
+		F1283DD11E0298A10097F6C7 /* RKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DCA1E0298A10097F6C7 /* RKTextView.m */; };
+		F1283DD21E0298A10097F6C7 /* RKWaterFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DCD1E0298A10097F6C7 /* RKWaterFlowView.m */; };
+		F1283DD31E0298A10097F6C7 /* RKWaterFlowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DCF1E0298A10097F6C7 /* RKWaterFlowViewCell.m */; };
+		F1283DDB1E029FA30097F6C7 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DD61E029FA30097F6C7 /* NSString+Size.m */; };
+		F1283DDC1E029FA30097F6C7 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DD81E029FA30097F6C7 /* UIColor+Extension.m */; };
+		F1283DDD1E029FA30097F6C7 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DDA1E029FA30097F6C7 /* UIView+Extension.m */; };
+		F1283DE01E02A0B30097F6C7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1283DDE1E02A0B30097F6C7 /* Info.plist */; };
+		F1283DE11E02A0B30097F6C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DDF1E02A0B30097F6C7 /* main.m */; };
 		F1338E3B1ADE4808008BADB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1338E3A1ADE4808008BADB8 /* Images.xcassets */; };
 		F1338E4A1ADE4808008BADB8 /* CustomClassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1338E491ADE4808008BADB8 /* CustomClassTests.m */; };
 /* End PBXBuildFile section */
@@ -38,19 +41,25 @@
 		F1283DA81E0294670097F6C7 /* RKMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKMainController.m; sourceTree = "<group>"; };
 		F1283DA91E0294670097F6C7 /* RKWaterFlowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKWaterFlowController.h; sourceTree = "<group>"; };
 		F1283DAA1E0294670097F6C7 /* RKWaterFlowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKWaterFlowController.m; sourceTree = "<group>"; };
-		F1283DAF1E0296B20097F6C7 /* RKCorlorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKCorlorView.h; sourceTree = "<group>"; };
-		F1283DB01E0296B20097F6C7 /* RKCorlorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKCorlorView.m; sourceTree = "<group>"; };
-		F1283DB11E0296B20097F6C7 /* RKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTextView.h; sourceTree = "<group>"; };
-		F1283DB21E0296B20097F6C7 /* RKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTextView.m; sourceTree = "<group>"; };
-		F1283DB31E0296B20097F6C7 /* RKWaterFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKWaterFlowView.h; sourceTree = "<group>"; };
-		F1283DB41E0296B20097F6C7 /* RKWaterFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKWaterFlowView.m; sourceTree = "<group>"; };
-		F1283DB51E0296B20097F6C7 /* RKWaterFlowViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKWaterFlowViewCell.h; sourceTree = "<group>"; };
-		F1283DB61E0296B20097F6C7 /* RKWaterFlowViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKWaterFlowViewCell.m; sourceTree = "<group>"; };
 		F1283DBC1E0296B90097F6C7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1283DBD1E0296B90097F6C7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F1283DBE1E0296B90097F6C7 /* CustomClass.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomClass.pch; sourceTree = "<group>"; };
-		F1283DBF1E0296B90097F6C7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Other/Info.plist; sourceTree = "<group>"; };
-		F1283DC01E0296B90097F6C7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Other/main.m; sourceTree = "<group>"; };
+		F1283DC61E0298A10097F6C7 /* RKCorlorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKCorlorView.h; sourceTree = "<group>"; };
+		F1283DC71E0298A10097F6C7 /* RKCorlorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKCorlorView.m; sourceTree = "<group>"; };
+		F1283DC91E0298A10097F6C7 /* RKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTextView.h; sourceTree = "<group>"; };
+		F1283DCA1E0298A10097F6C7 /* RKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTextView.m; sourceTree = "<group>"; };
+		F1283DCC1E0298A10097F6C7 /* RKWaterFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKWaterFlowView.h; sourceTree = "<group>"; };
+		F1283DCD1E0298A10097F6C7 /* RKWaterFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKWaterFlowView.m; sourceTree = "<group>"; };
+		F1283DCE1E0298A10097F6C7 /* RKWaterFlowViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKWaterFlowViewCell.h; sourceTree = "<group>"; };
+		F1283DCF1E0298A10097F6C7 /* RKWaterFlowViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKWaterFlowViewCell.m; sourceTree = "<group>"; };
+		F1283DD51E029FA30097F6C7 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		F1283DD61E029FA30097F6C7 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		F1283DD71E029FA30097F6C7 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		F1283DD81E029FA30097F6C7 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		F1283DD91E029FA30097F6C7 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		F1283DDA1E029FA30097F6C7 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		F1283DDE1E02A0B30097F6C7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1283DDF1E02A0B30097F6C7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1338E2A1ADE4808008BADB8 /* CustomClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1338E3A1ADE4808008BADB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F1338E431ADE4808008BADB8 /* CustomClassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomClassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,14 +101,9 @@
 		F1283DAE1E0296B20097F6C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F1283DAF1E0296B20097F6C7 /* RKCorlorView.h */,
-				F1283DB01E0296B20097F6C7 /* RKCorlorView.m */,
-				F1283DB11E0296B20097F6C7 /* RKTextView.h */,
-				F1283DB21E0296B20097F6C7 /* RKTextView.m */,
-				F1283DB31E0296B20097F6C7 /* RKWaterFlowView.h */,
-				F1283DB41E0296B20097F6C7 /* RKWaterFlowView.m */,
-				F1283DB51E0296B20097F6C7 /* RKWaterFlowViewCell.h */,
-				F1283DB61E0296B20097F6C7 /* RKWaterFlowViewCell.m */,
+				F1283DC51E0298A10097F6C7 /* ColorView */,
+				F1283DC81E0298A10097F6C7 /* TextView */,
+				F1283DCB1E0298A10097F6C7 /* WaterFlow */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,10 +126,54 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F1283DC51E0298A10097F6C7 /* ColorView */ = {
+			isa = PBXGroup;
+			children = (
+				F1283DC61E0298A10097F6C7 /* RKCorlorView.h */,
+				F1283DC71E0298A10097F6C7 /* RKCorlorView.m */,
+			);
+			path = ColorView;
+			sourceTree = "<group>";
+		};
+		F1283DC81E0298A10097F6C7 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				F1283DC91E0298A10097F6C7 /* RKTextView.h */,
+				F1283DCA1E0298A10097F6C7 /* RKTextView.m */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
+		F1283DCB1E0298A10097F6C7 /* WaterFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F1283DCC1E0298A10097F6C7 /* RKWaterFlowView.h */,
+				F1283DCD1E0298A10097F6C7 /* RKWaterFlowView.m */,
+				F1283DCE1E0298A10097F6C7 /* RKWaterFlowViewCell.h */,
+				F1283DCF1E0298A10097F6C7 /* RKWaterFlowViewCell.m */,
+			);
+			path = WaterFlow;
+			sourceTree = "<group>";
+		};
+		F1283DD41E029FA30097F6C7 /* Categray */ = {
+			isa = PBXGroup;
+			children = (
+				F1283DD51E029FA30097F6C7 /* NSString+Size.h */,
+				F1283DD61E029FA30097F6C7 /* NSString+Size.m */,
+				F1283DD71E029FA30097F6C7 /* UIColor+Extension.h */,
+				F1283DD81E029FA30097F6C7 /* UIColor+Extension.m */,
+				F1283DD91E029FA30097F6C7 /* UIView+Extension.h */,
+				F1283DDA1E029FA30097F6C7 /* UIView+Extension.m */,
+			);
+			name = Categray;
+			path = CustomClass/Categray;
+			sourceTree = "<group>";
+		};
 		F1338E211ADE4808008BADB8 = {
 			isa = PBXGroup;
 			children = (
 				F1338E2C1ADE4808008BADB8 /* CustomClass */,
+				F1283DD41E029FA30097F6C7 /* Categray */,
 				F1283DBB1E0296B90097F6C7 /* Other */,
 				F1338E2D1ADE4808008BADB8 /* Supporting Files */,
 				F1338E461ADE4808008BADB8 /* CustomClassTests */,
@@ -145,9 +193,9 @@
 		F1338E2C1ADE4808008BADB8 /* CustomClass */ = {
 			isa = PBXGroup;
 			children = (
+				F1283DA41E0294670097F6C7 /* Controller */,
 				F1283DC41E0297280097F6C7 /* Model */,
 				F1283DAE1E0296B20097F6C7 /* View */,
-				F1283DA41E0294670097F6C7 /* Controller */,
 			);
 			path = CustomClass;
 			sourceTree = "<group>";
@@ -155,8 +203,8 @@
 		F1338E2D1ADE4808008BADB8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F1283DBF1E0296B90097F6C7 /* Info.plist */,
-				F1283DC01E0296B90097F6C7 /* main.m */,
+				F1283DDE1E02A0B30097F6C7 /* Info.plist */,
+				F1283DDF1E02A0B30097F6C7 /* main.m */,
 				F1338E3A1ADE4808008BADB8 /* Images.xcassets */,
 			);
 			name = "Supporting Files";
@@ -261,8 +309,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1283DC21E0296B90097F6C7 /* Info.plist in Resources */,
 				F1338E3B1ADE4808008BADB8 /* Images.xcassets in Resources */,
+				F1283DE01E02A0B30097F6C7 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,15 +328,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1283DE11E02A0B30097F6C7 /* main.m in Sources */,
+				F1283DD01E0298A10097F6C7 /* RKCorlorView.m in Sources */,
 				F1283DAD1E0294670097F6C7 /* RKWaterFlowController.m in Sources */,
+				F1283DD31E0298A10097F6C7 /* RKWaterFlowViewCell.m in Sources */,
 				F1283DAC1E0294670097F6C7 /* RKMainController.m in Sources */,
-				F1283DB81E0296B20097F6C7 /* RKTextView.m in Sources */,
-				F1283DB71E0296B20097F6C7 /* RKCorlorView.m in Sources */,
+				F1283DDC1E029FA30097F6C7 /* UIColor+Extension.m in Sources */,
+				F1283DDB1E029FA30097F6C7 /* NSString+Size.m in Sources */,
+				F1283DDD1E029FA30097F6C7 /* UIView+Extension.m in Sources */,
 				F1283DC11E0296B90097F6C7 /* AppDelegate.m in Sources */,
-				F1283DBA1E0296B20097F6C7 /* RKWaterFlowViewCell.m in Sources */,
 				F1283DAB1E0294670097F6C7 /* RKCircleAnimationController.m in Sources */,
-				F1283DC31E0296B90097F6C7 /* main.m in Sources */,
-				F1283DB91E0296B20097F6C7 /* RKWaterFlowView.m in Sources */,
+				F1283DD11E0298A10097F6C7 /* RKTextView.m in Sources */,
+				F1283DD21E0298A10097F6C7 /* RKWaterFlowView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PREFIX_HEADER = CustomClass/CustomClass.pch;
+				GCC_PREFIX_HEADER = CustomClass/Other/CustomClass.pch;
 				INFOPLIST_FILE = CustomClass/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -418,7 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PREFIX_HEADER = CustomClass/CustomClass.pch;
+				GCC_PREFIX_HEADER = CustomClass/Other/CustomClass.pch;
 				INFOPLIST_FILE = CustomClass/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
