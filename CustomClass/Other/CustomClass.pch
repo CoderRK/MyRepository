@@ -2,7 +2,7 @@
 //  CustomClass.pch
 //  CustomClass
 //
-//  Created by 任奎 on 15/4/16.
+//  Created by RK on 15/4/16.
 //  Copyright (c) 2015年 RK. All rights reserved.
 //
 
@@ -11,6 +11,7 @@
 
 #import "UIView+Extension.h"
 #import "NSString+Size.h"
+#import "UIColor+Extension.h"
 
 // 颜色
 #define RKColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
@@ -18,4 +19,7 @@
 
  // 随机色
 #define RKRandomColor RKColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+#define kMainScreenWidth       [UIScreen mainScreen].bounds.size.width
+#define kMainScreenHeight      [UIScreen mainScreen].bounds.size.height
 #endif

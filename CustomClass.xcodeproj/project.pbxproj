@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F1283DAB1E0294670097F6C7 /* RKCircleAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DA61E0294670097F6C7 /* RKCircleAnimationController.m */; };
-		F1283DAC1E0294670097F6C7 /* RKMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DA81E0294670097F6C7 /* RKMainController.m */; };
 		F1283DAD1E0294670097F6C7 /* RKWaterFlowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DAA1E0294670097F6C7 /* RKWaterFlowController.m */; };
 		F1283DC11E0296B90097F6C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DBD1E0296B90097F6C7 /* AppDelegate.m */; };
 		F1283DD01E0298A10097F6C7 /* RKCorlorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DC71E0298A10097F6C7 /* RKCorlorView.m */; };
@@ -22,6 +21,12 @@
 		F1283DE11E02A0B30097F6C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283DDF1E02A0B30097F6C7 /* main.m */; };
 		F1338E3B1ADE4808008BADB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1338E3A1ADE4808008BADB8 /* Images.xcassets */; };
 		F1338E4A1ADE4808008BADB8 /* CustomClassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1338E491ADE4808008BADB8 /* CustomClassTests.m */; };
+		F1CA09CB1E0A27F70038C008 /* RK_RadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CA09CA1E0A27F70038C008 /* RK_RadarView.m */; };
+		F1CA09CF1E0A28420038C008 /* RK_CirclePercentageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CA09CE1E0A28420038C008 /* RK_CirclePercentageView.m */; };
+		F1CA09D21E0A2AC80038C008 /* RKRadarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CA09D11E0A2AC80038C008 /* RKRadarController.m */; };
+		F1CA09D51E0A2CF40038C008 /* RKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CA09D41E0A2CF40038C008 /* RKMainViewController.m */; };
+		F1CA09D81E0A40B50038C008 /* RKTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CA09D71E0A40B50038C008 /* RKTextViewController.m */; };
+		F1CA09DB1E0A424C0038C008 /* RKPercentageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CA09DA1E0A424C0038C008 /* RKPercentageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +42,6 @@
 /* Begin PBXFileReference section */
 		F1283DA51E0294670097F6C7 /* RKCircleAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKCircleAnimationController.h; sourceTree = "<group>"; };
 		F1283DA61E0294670097F6C7 /* RKCircleAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKCircleAnimationController.m; sourceTree = "<group>"; };
-		F1283DA71E0294670097F6C7 /* RKMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKMainController.h; sourceTree = "<group>"; };
-		F1283DA81E0294670097F6C7 /* RKMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKMainController.m; sourceTree = "<group>"; };
 		F1283DA91E0294670097F6C7 /* RKWaterFlowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKWaterFlowController.h; sourceTree = "<group>"; };
 		F1283DAA1E0294670097F6C7 /* RKWaterFlowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKWaterFlowController.m; sourceTree = "<group>"; };
 		F1283DBC1E0296B90097F6C7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,6 +68,18 @@
 		F1338E431ADE4808008BADB8 /* CustomClassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomClassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1338E481ADE4808008BADB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1338E491ADE4808008BADB8 /* CustomClassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomClassTests.m; sourceTree = "<group>"; };
+		F1CA09C91E0A27F70038C008 /* RK_RadarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RK_RadarView.h; sourceTree = "<group>"; };
+		F1CA09CA1E0A27F70038C008 /* RK_RadarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RK_RadarView.m; sourceTree = "<group>"; };
+		F1CA09CD1E0A28420038C008 /* RK_CirclePercentageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RK_CirclePercentageView.h; sourceTree = "<group>"; };
+		F1CA09CE1E0A28420038C008 /* RK_CirclePercentageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RK_CirclePercentageView.m; sourceTree = "<group>"; };
+		F1CA09D01E0A2AC80038C008 /* RKRadarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKRadarController.h; sourceTree = "<group>"; };
+		F1CA09D11E0A2AC80038C008 /* RKRadarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKRadarController.m; sourceTree = "<group>"; };
+		F1CA09D41E0A2CF40038C008 /* RKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKMainViewController.m; sourceTree = "<group>"; };
+		F1CA09D61E0A40B50038C008 /* RKTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTextViewController.h; sourceTree = "<group>"; };
+		F1CA09D71E0A40B50038C008 /* RKTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTextViewController.m; sourceTree = "<group>"; };
+		F1CA09D91E0A424C0038C008 /* RKPercentageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKPercentageViewController.h; sourceTree = "<group>"; };
+		F1CA09DA1E0A424C0038C008 /* RKPercentageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKPercentageViewController.m; sourceTree = "<group>"; };
+		F1CA09DF1E0A54D10038C008 /* RKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKMainViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +105,16 @@
 			children = (
 				F1283DA51E0294670097F6C7 /* RKCircleAnimationController.h */,
 				F1283DA61E0294670097F6C7 /* RKCircleAnimationController.m */,
-				F1283DA71E0294670097F6C7 /* RKMainController.h */,
-				F1283DA81E0294670097F6C7 /* RKMainController.m */,
+				F1CA09DF1E0A54D10038C008 /* RKMainViewController.h */,
+				F1CA09D41E0A2CF40038C008 /* RKMainViewController.m */,
 				F1283DA91E0294670097F6C7 /* RKWaterFlowController.h */,
 				F1283DAA1E0294670097F6C7 /* RKWaterFlowController.m */,
+				F1CA09D01E0A2AC80038C008 /* RKRadarController.h */,
+				F1CA09D11E0A2AC80038C008 /* RKRadarController.m */,
+				F1CA09D61E0A40B50038C008 /* RKTextViewController.h */,
+				F1CA09D71E0A40B50038C008 /* RKTextViewController.m */,
+				F1CA09D91E0A424C0038C008 /* RKPercentageViewController.h */,
+				F1CA09DA1E0A424C0038C008 /* RKPercentageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -101,6 +122,8 @@
 		F1283DAE1E0296B20097F6C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F1CA09CC1E0A281C0038C008 /* PercentageCircleView */,
+				F1CA09C81E0A27610038C008 /* RadarView */,
 				F1283DC51E0298A10097F6C7 /* ColorView */,
 				F1283DC81E0298A10097F6C7 /* TextView */,
 				F1283DCB1E0298A10097F6C7 /* WaterFlow */,
@@ -228,6 +251,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F1CA09C81E0A27610038C008 /* RadarView */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA09C91E0A27F70038C008 /* RK_RadarView.h */,
+				F1CA09CA1E0A27F70038C008 /* RK_RadarView.m */,
+			);
+			path = RadarView;
+			sourceTree = "<group>";
+		};
+		F1CA09CC1E0A281C0038C008 /* PercentageCircleView */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA09CD1E0A28420038C008 /* RK_CirclePercentageView.h */,
+				F1CA09CE1E0A28420038C008 /* RK_CirclePercentageView.m */,
+			);
+			path = PercentageCircleView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -330,15 +371,20 @@
 			files = (
 				F1283DE11E02A0B30097F6C7 /* main.m in Sources */,
 				F1283DD01E0298A10097F6C7 /* RKCorlorView.m in Sources */,
+				F1CA09D51E0A2CF40038C008 /* RKMainViewController.m in Sources */,
 				F1283DAD1E0294670097F6C7 /* RKWaterFlowController.m in Sources */,
+				F1CA09D81E0A40B50038C008 /* RKTextViewController.m in Sources */,
 				F1283DD31E0298A10097F6C7 /* RKWaterFlowViewCell.m in Sources */,
-				F1283DAC1E0294670097F6C7 /* RKMainController.m in Sources */,
 				F1283DDC1E029FA30097F6C7 /* UIColor+Extension.m in Sources */,
 				F1283DDB1E029FA30097F6C7 /* NSString+Size.m in Sources */,
 				F1283DDD1E029FA30097F6C7 /* UIView+Extension.m in Sources */,
 				F1283DC11E0296B90097F6C7 /* AppDelegate.m in Sources */,
+				F1CA09D21E0A2AC80038C008 /* RKRadarController.m in Sources */,
+				F1CA09CF1E0A28420038C008 /* RK_CirclePercentageView.m in Sources */,
 				F1283DAB1E0294670097F6C7 /* RKCircleAnimationController.m in Sources */,
 				F1283DD11E0298A10097F6C7 /* RKTextView.m in Sources */,
+				F1CA09DB1E0A424C0038C008 /* RKPercentageViewController.m in Sources */,
+				F1CA09CB1E0A27F70038C008 /* RK_RadarView.m in Sources */,
 				F1283DD21E0298A10097F6C7 /* RKWaterFlowView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

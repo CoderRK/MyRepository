@@ -2,7 +2,7 @@
 //  RKCircleAnimation.m
 //  CustomClass
 //
-//  Created by 任奎 on 15/4/20.
+//  Created by RK on 15/4/20.
 //  Copyright (c) 2015年 RK. All rights reserved.
 //
 
@@ -21,6 +21,7 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
+        self.backgroundColor = [UIColor lightGrayColor];
         _circleLayer = [CAShapeLayer layer];
     }
     return self;

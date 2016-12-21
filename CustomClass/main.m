@@ -2,7 +2,7 @@
 //  main.m
 //  CustomClass
 //
-//  Created by 任奎 on 15/4/15.
+//  Created by RK on 15/4/15.
 //  Copyright (c) 2015年 RK. All rights reserved.
 //
 

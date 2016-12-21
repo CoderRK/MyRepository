@@ -2,7 +2,7 @@
 //  RKWaterFlowController.m
 //  CustomClass
 //
-//  Created by 任奎 on 15/4/16.
+//  Created by RK on 15/4/16.
 //  Copyright (c) 2015年 RK. All rights reserved.
 //
 
@@ -19,11 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
     RKWaterFlowView *waterFlowView = [[RKWaterFlowView alloc] initWithFrame:self.view.bounds];
     waterFlowView.MyDelegate = self;
     waterFlowView.dataSource = self;
     [self.view addSubview:waterFlowView];
-    
+    //刷新数据
     [waterFlowView reloadData];
 }
 - (NSUInteger)numberOfCellsInWaterFlowView:(RKWaterFlowView *)waterFlowView
@@ -60,7 +61,6 @@
         case 1:return 100;
         case 2:return 80;
         default:return 120;
-            
     }
 }
 - (CGFloat)waterFlowView:(RKWaterFlowView *)waterFlowView marginForType:(RKWaterFlowViewMarginType)type

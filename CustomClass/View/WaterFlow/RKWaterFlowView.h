@@ -2,20 +2,20 @@
 //  RKWaterFlowView.h
 //  CustomClass
 //
-//  Created by 任奎 on 15/4/16.
+//  Created by RK on 15/4/16.
 //  Copyright (c) 2015年 RK. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-typedef enum{
-    RKWaterFlowViewMarginTypeTop,
-    RKWaterFlowViewMarginTypeBottm,
-    RKWaterFlowViewMarginTypeLeft,
-    RKWaterFlowViewMarginTypeRight,
-    RKWaterFlowViewMarginTypeColumn,
-    RKWaterFlowViewMarginTypeRow
-}RKWaterFlowViewMarginType;
+typedef NS_ENUM(NSInteger, RKWaterFlowViewMarginType){
+    RKWaterFlowViewMarginTypeTop,//上面
+    RKWaterFlowViewMarginTypeBottm,//下面
+    RKWaterFlowViewMarginTypeLeft,//左边
+    RKWaterFlowViewMarginTypeRight,//右边
+    RKWaterFlowViewMarginTypeColumn,//竖列
+    RKWaterFlowViewMarginTypeRow//行
+};
 
 @class RKWaterFlowViewCell,RKWaterFlowView;
 
