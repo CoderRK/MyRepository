@@ -20,6 +20,10 @@
     [super viewDidLoad];
     self.title = @"圆圈动画";
     self.view.backgroundColor = [UIColor colorWithHex:0x757472 alpha:0.8];
+    
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(event:) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    self.timer = timer;
 }
 
 - (void)viewWillLayoutSubviews
@@ -42,7 +46,7 @@
 - (void)event:(id)object
 {
     self.corlorView.percent = arc4random()%100/100.f;
-    NSLog(@"%f",arc4random()%100/100.f);
+    NSLog(@"arc4random===>%f",arc4random()%100/100.f);
 }
 
 #pragma mark - lazy load
@@ -58,9 +62,6 @@
                               (id)[UIColor whiteColor].CGColor,
                               (id)[UIColor cyanColor].CGColor];
         _corlorView = corlorView;
-        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(event:) userInfo:nil repeats:YES];
-        [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
-        _timer = timer;
     }
     return _corlorView;
 }

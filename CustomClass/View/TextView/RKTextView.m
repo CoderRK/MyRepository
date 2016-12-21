@@ -57,7 +57,7 @@
 - (void)textDidChange
 {
     self.placeholderLabel.hidden = (self.text.length!=0);
-    // 判断字符串包不包含汉子
+    // 判断字符串包不包含汉字
     if (self.text.length>0) {
         NSInteger charNum = 0;
         for (int i = 0; i < self.text.length; i++, charNum++) {
